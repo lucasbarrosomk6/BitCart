@@ -1,0 +1,121 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(../../fonts/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  src: local("Work Sans"),
+    url(../../fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+}
+.content {
+  position: absolute;
+  left: 205px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: calc(100% - 305px);
+  max-width: calc(100% - 305px);
+  margin: 35px 50px 0px 50px;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.content-title {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 42px;
+  line-height: 49px;
+}
+.new-notification {
+  position: absolute;
+  height: 7px;
+  width: 7px;
+  border-radius: 5px;
+  background: red;
+  top: 43px;
+  right: 4px;
+}
+.page {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  min-width: 100%;
+  max-width: 100%;
+  flex: 1;
+}
+.notifications-container {
+  position: absolute;
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 325px;
+  height: 237px;
+  right: 0px;
+  top: 70px;
+
+  background: #fafbfc;
+  border: 1px solid rgba(4, 48, 83, 0.1);
+  box-sizing: border-box;
+  box-shadow: 0px 9px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 4px;
+}
+.notification-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 57px;
+  width: 100%;
+  padding: 0 10%;
+
+  background: #ffffff;
+  border: 1px solid rgba(4, 48, 83, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px 4px 0px 0px;
+
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+}
+.notification {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  width: 90%;
+  padding: 5%;
+}
+.notification:hover {
+  background-color: #e6ebee;
+}
+.notif-title {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #043053;
+  border-bottom: 1px solid #788fa3;
+}
+.notif-body {
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+
+  color: #043053;
+
+  opacity: 0.5;
+}

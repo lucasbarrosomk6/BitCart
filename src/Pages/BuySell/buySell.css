@@ -1,0 +1,33 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(../../fonts/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  src: local("Work Sans"),
+    url(../../fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+}
+/* material ui adjustments start */
+.MuiAppBar-colorPrimary {
+  color: #b4c1cc !important;
+  background-color: white !important;
+}
+.MuiPaper-elevation4 {
+  box-shadow: none !important;
+}
+.PrivateTabIndicator-colorSecondary-67 {
+  background-color: #043053 !important;
+}
+.MuiTab-textColorInherit.Mui-selected {
+  opacity: 1;
+  color: #043053 !important;
+}
+@media (min-width: 600px) {
+  .MuiTab-root {
+    min-width: 0px !important;
+  }
+}
+.PrivateTabIndicator-root-65 {
+  height: 3px !important;
+}
+/*material ui adjustments end */

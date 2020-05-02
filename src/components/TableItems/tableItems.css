@@ -1,0 +1,56 @@
+@font-face {
+  font-family: "Poppins";
+  src: local("Poppins"), url(../../fonts/Poppins-Regular.ttf) format("truetype");
+}
+@font-face {
+  font-family: "Work Sans";
+  src: local("Work Sans"),
+    url(../../fonts/WorkSans-VariableFont_wght.ttf) format("truetype");
+}
+.table-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+}
+.table-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 74px;
+  width: 100%;
+  transition: all 0.4s;
+}
+.table-item:hover {
+  background-color: #e6ebee;
+}
+.item-value {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: calc(100% / 7);
+  font-family: Work Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  color: #043053;
+  overflow: hidden;
+}
+.processed {
+  color: #20ae6b;
+  font-weight: normal;
+}
+.processing {
+  color: #e7b51f;
+  font-weight: normal;
+}
+.canceled {
+  color: #ff3d00;
+  font-weight: normal;
+}
